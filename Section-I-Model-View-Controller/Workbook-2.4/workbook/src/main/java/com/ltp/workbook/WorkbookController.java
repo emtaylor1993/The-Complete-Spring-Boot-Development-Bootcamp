@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
 public class WorkbookController {
 
@@ -12,6 +11,5 @@ public class WorkbookController {
     public String getSign(Model model) {
         model.addAttribute("speed", 70);
         return "sign";
-    }
-    
+    }    
 }
