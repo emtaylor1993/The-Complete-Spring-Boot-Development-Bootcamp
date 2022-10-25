@@ -3,7 +3,6 @@ package com.ltp.workbook;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
 public class WorkbookController {
     
@@ -11,5 +10,4 @@ public class WorkbookController {
     public String getLandingPage() {
         return "page";
     }
-    
 }
