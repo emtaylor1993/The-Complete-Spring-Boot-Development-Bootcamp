@@ -2,7 +2,6 @@ package com.ltp.workbook;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,5 +20,4 @@ public class WorkbookController {
         model.put("fifth", new Show("Mr. Robot", "407 Proxy Authentication Required", 9.9));
         return new ModelAndView("shows", model);
     }
-
 }
