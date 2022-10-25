@@ -7,13 +7,11 @@ public class Record {
     private BigDecimal revenue;
     private BigDecimal cost;
 
-
     public Record(String item, BigDecimal revenue, BigDecimal cost) {
         this.item = item;
         this.revenue = revenue;
         this.cost = cost;
     }
-
 
     public String getItem() {
         return this.item;
@@ -38,7 +36,4 @@ public class Record {
     public void setCost(BigDecimal cost) {
         this.cost = cost;
     }
-
-
-
 }
