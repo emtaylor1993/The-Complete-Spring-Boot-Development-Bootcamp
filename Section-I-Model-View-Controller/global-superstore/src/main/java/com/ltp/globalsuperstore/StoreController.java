@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +13,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class StoreController {
-
     List<Item> items = new ArrayList<>();
 
     @GetMapping("/")
@@ -57,7 +55,4 @@ public class StoreController {
         long diff = Math.abs(newDate.getTime() - oldDate.getTime());
         return (int) (TimeUnit.MILLISECONDS.toDays(diff)) <= 5;
     }
-
-
-
 }
