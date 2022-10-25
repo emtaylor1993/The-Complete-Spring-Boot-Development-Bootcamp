@@ -5,7 +5,6 @@ public class Employee {
     private int age;
     private String role;
 
-
     public Employee(String name, int age, String role) {
         this.name = name;
         this.age = age;
@@ -35,5 +34,4 @@ public class Employee {
     public void setRole(String role) {
         this.role = role;
     }
-
 }
