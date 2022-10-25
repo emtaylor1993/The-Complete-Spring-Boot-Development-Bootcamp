@@ -10,5 +10,4 @@ public class WorkbookController {
     public String getShows() {
         return "shows";
     }
-
 }
