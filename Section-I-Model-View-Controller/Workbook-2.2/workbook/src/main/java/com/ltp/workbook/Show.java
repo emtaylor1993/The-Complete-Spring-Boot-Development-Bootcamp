@@ -11,7 +11,6 @@ public class Show {
         this.rating = rating;
     }
 
-
     public String getTitle() {
         return this.title;
     }
@@ -35,5 +34,4 @@ public class Show {
     public void setRating(double rating) {
         this.rating = rating;
     }
-    
 }
