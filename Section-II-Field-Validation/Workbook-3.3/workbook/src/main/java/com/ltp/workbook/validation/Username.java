@@ -12,6 +12,6 @@ import javax.validation.Payload;
 @Constraint(validatedBy = UsernameValidator.class)
 public @interface Username {
     String message() default "INVALID USERNAME";
-	Class<?>[] groups() default {};
+    Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
