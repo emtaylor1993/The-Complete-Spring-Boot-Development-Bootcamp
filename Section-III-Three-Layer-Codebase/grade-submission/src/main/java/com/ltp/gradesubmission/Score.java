@@ -12,7 +12,9 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = ScoreValidator.class)
 public @interface Score {
+
     String message() default "Invalid Data";
 	Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
+
 }
