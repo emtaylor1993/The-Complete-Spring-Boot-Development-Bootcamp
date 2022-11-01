@@ -20,7 +20,7 @@ import org.junit.jupiter.api.BeforeEach;
 class ContactsApplicationTests {
 
 	@Autowired
-    private MockMvc mockMvc;
+    	private MockMvc mockMvc;
 
 	@Autowired
 	private ContactRepository contactRepository;
@@ -35,7 +35,7 @@ class ContactsApplicationTests {
 	};
 
 	@BeforeEach
-    void setup(){
+   	void setup(){
 		for (int i = 0; i < contacts.length; i++) {
 			contactRepository.saveContact(contacts[i]);
 		}
@@ -44,7 +44,7 @@ class ContactsApplicationTests {
 	@AfterEach
 	void clear(){
 		contactRepository.getContacts().clear();
-    }
+    	}
 
 	@Test
 	public void getContactByIdTest() throws Exception {
